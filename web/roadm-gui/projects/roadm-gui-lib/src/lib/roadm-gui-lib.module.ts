@@ -23,8 +23,10 @@ import { RoadmRoutingModule } from './roadm-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoadmPortComponent } from './port/port.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { Hero } from './hero';
 import {HEROES} from './mock-heroes';
+
 
 
 @NgModule({
@@ -32,6 +34,7 @@ import {HEROES} from './mock-heroes';
         RoadmDeviceComponent,
         RoadmPortComponent,
         HeroesComponent,
+        HeroDetailComponent,
     ],
     imports: [
         RoadmRoutingModule,
