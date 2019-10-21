@@ -24,6 +24,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RoadmPortComponent } from './port/port.component';
 import { HeroesComponent } from './heroes/heroes.component';
 import { Hero } from './hero';
+import {HEROES} from './mock-heroes';
 
 
 @NgModule({

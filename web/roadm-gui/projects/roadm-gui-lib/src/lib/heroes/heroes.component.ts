@@ -1,6 +1,7 @@
 
 import { Component, OnInit, OnDestroy} from '@angular/core';
 import {Hero} from '../hero';
+import {HEROES} from '../mock-heroes';
 
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -20,8 +21,11 @@ export class HeroesComponent implements OnInit{
         
     }
  
-   hero: Hero = {
-   id: 1,
-   name: 'Windstorm' };
+  /** selectedHero: Hero;
+   onSelect(hero: Hero): void {
+     this.selectedHero = hero;
+   }*/
+   
+   heroes = HEROES;
    
 }
