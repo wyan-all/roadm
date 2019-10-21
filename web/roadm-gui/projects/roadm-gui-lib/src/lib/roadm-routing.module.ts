@@ -27,6 +27,11 @@ const appRoutes: Routes = [
         path: '',
         component: RoadmDeviceComponent
     },
+    {
+        path: 'heroes',
+        component: HeroesComponent
+    },
+    
 ];
 
 /**
