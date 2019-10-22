@@ -18,19 +18,33 @@ import { Routes, RouterModule } from '@angular/router';
 import { RoadmDeviceComponent } from './roadm/roadm.component';
 import { RoadmPortComponent } from './port/port.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { DashboardComponent }   from './dashboard/dashboard.component';
+import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
+
 const appRoutes: Routes = [
     {
         path: 'roadm-port-gui',
         component: RoadmPortComponent
     },
+
+    { path: 'dashboard', component: DashboardComponent },
+
     {
         path: '',
-        component: RoadmDeviceComponent
+        component: RoadmDeviceComponent,
+        children: [
+         { path: 'heroes', component: HeroesComponent },
+      ]
     },
+
+   // { path: '', redirectTo: './dashboard', pathMatch: 'full' },
+
     {
         path: 'heroes',
         component: HeroesComponent
     },
+
+    { path: 'hero-detail/:id', component: HeroDetailComponent },
     
 ];
 
