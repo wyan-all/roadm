@@ -26,7 +26,7 @@ import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { Hero } from './hero';
 import {HEROES} from './mock-heroes';
-
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -35,6 +35,7 @@ import {HEROES} from './mock-heroes';
         RoadmPortComponent,
         HeroesComponent,
         HeroDetailComponent,
+        MessagesComponent,
     ],
     imports: [
         RoadmRoutingModule,
