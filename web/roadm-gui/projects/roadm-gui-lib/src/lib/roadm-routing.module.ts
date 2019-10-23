@@ -27,24 +27,27 @@ const appRoutes: Routes = [
         component: RoadmPortComponent
     },
 
-    { path: 'dashboard', component: DashboardComponent },
+//    { path: 'dashboard', component: DashboardComponent },
 
     {
         path: '',
         component: RoadmDeviceComponent,
         children: [
+         { path: 'dashboard', component: DashboardComponent },
+         { path: '', redirectTo: '/roadm-gui/dashboard', pathMatch: 'full' },
          { path: 'heroes', component: HeroesComponent },
+         { path: 'hero-detail/:id', component: HeroDetailComponent },
       ]
     },
 
 //    { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 
-    {
+  /*  {
         path: 'heroes',
         component: HeroesComponent
     },
 
-    { path: 'hero-detail/:id', component: HeroDetailComponent },
+    { path: 'hero-detail/:id', component: HeroDetailComponent },***/
     
 ];
 
